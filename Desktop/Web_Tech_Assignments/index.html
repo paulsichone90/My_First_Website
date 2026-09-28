@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First Web Page</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+    <header>
+        <nav class="nav background">
+
+            <div class="logo">
+                <img
+                    src="images/logo.jpg"
+                    height="50"
+                    alt="logo">
+            </div>
+
+            
+            <ul>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+
+                <li>
+                    <a href="#hobbies">My Hobbies</a>
+                </li>
+
+                <li>
+                    <a href="#learning">My Learning Plan</a>
+                </li>
+
+                <li>
+                    <a href="#photos">My Photos</a>
+                </li>
+
+                <li>
+                    <a href="#media">My Media</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+  
+    <main>
+
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                My name is Paul Sichone, a second-year Computer Science student.
+                I am passionate about learning new technologies, particularly
+                Data Science and Artificial Intelligence. I am still developing
+                my professional experience in this field. I have been consistently
+                learning Python, problem-solving skills, and I love working with
+                people who never stop learning.
+            </p>
+
+        </section>
+      
+        <section id="hobbies">
+
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Programming</li>
+                <li>Learning New Technologies</li>
+                <li>Working on Technology Projects</li>
+                <li>Reading Technology Articles</li>
+            </ul>
+
+        </section>
+       
+        <section id="learning">
+
+            <h2>My Learning Path</h2>
+
+            <p>
+                My goal is to develop strong skills in Data Science and
+                Artificial Intelligence.
+            </p>
+
+            <h3>Technologies I'm Learning</h3>
+
+            <ul>
+                <li>Web Technology</li>
+                <li>Java Programming</li>
+                <li>Python Programming</li>
+                <li>SQL and Machine Learning</li>
+            </ul>
+           
+            <table>
+
+                <caption>My Learning Plan</caption>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practical Task</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>Create the content of a webpage</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>CSS</td>
+                        <td>Style the page with colors</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Python Basics</td>
+                        <td>Build a small project</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Python Libraries</td>
+                        <td>Clean data with Pandas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>Power BI</td>
+                        <td>Build a small project</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section id="photos">
+
+            <h2>My Photos</h2>
+
+            <p>
+                Engage with <strong>Paul Sichone</strong>, a second-year
+                Computer Science student at Mulungushi University,
+                pursuing the frontiers of knowledge.
+            </p>
+
+
+    
+            <img
+                src="images/Photo.jpg"
+                alt="A photo of Paul Sichone"
+                 max-height="100%"
+                 max-width="100%">
+
+            <h3>Coding and Building Solutions</h3>
+
+            <p>
+                A moment from my learning journey as I work on programming
+                projects and develop my data analytics skills.
+            </p>
+
+
+            <img
+                src="images/photo3.jpg"
+                alt="Paul Sichone working on a project"
+               max-height="100%"
+               max-width="100%">
+
+            <h3>Learning Beyond the Classroom</h3>
+
+            <p>
+                Learning through practice, projects, and exploring new
+                technology ideas beyond the classroom.
+            </p>
+
+
+        
+            <img
+                src="images/photo4.jpg"
+                alt="Paul Sichone learning beyond the classroom"
+                 max-height="100%"
+               max-width="100%">
+
+        </section>
+
+
+        <section id="media">
+
+            <h2>My Media</h2>
+            <p>
+            A brief introduction about me, my computer science journey,
+            and my passion for technology and programming.
+            </p>
+          <video
+          src="Videos/audio1.mp3" 
+          controls 
+
+           max-height="500%" 
+           max-width="500%">
+
+          </video>   
+         <p>
+            A brief  audio about about me, my computer science journey,
+            and my passion for technology and programming.
+         </p>
+        <audio
+        src="Videos/audio1.mp3" controls
+        
+        height="100"
+        width="100">
+            
+        </audio>  
+
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="full_name"
+                    required
+                    placeholder="Enter your full name">
+
+                <br><br>
+
+
+                <label for="email">Email:</label>
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="paul@gmail.com">
+
+                <br><br>
+
+
+              
+                <label for="message">Message:</label>
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                    placeholder="Send a message"></textarea>
+
+                <br><br>
+
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            &copy; paulsichone000@gmial.com. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
