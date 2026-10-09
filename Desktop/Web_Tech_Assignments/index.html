@@ -7,10 +7,11 @@
 
     <title>My First Web Page</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    
+<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="light">
    
     <header>
         <nav class="nav background">
@@ -24,6 +25,11 @@
 
             
             <ul>
+                
+                <li>
+                    <a href="#home">Home</a></li>
+                <li>
+                    <a href="#projects">Projects &amp; Skills</a></li>
                 <li>
                     <a href="#about">About Me</a>
                 </li>
@@ -50,9 +56,32 @@
             </ul>
 
         </nav>
+        
+<button type="button" id="themeToggle" aria-pressed="false">
+    Switch to Dark Mode
+</button>
     </header>
   
     <main>
+
+        
+<section id="home" class="hero">
+    <h1>Paul Sichone</h1>
+
+    <p class="hero-subtitle">
+        Computer Science Student | Aspiring Data Scientist
+    </p>
+
+    <p>
+        Welcome to my personal portfolio. I am a Computer Science
+        student at Mulungushi University interested in programming,
+        data science, artificial intelligence and building practical
+        technology solutions. This website showcases my learning
+        journey, hobbies, projects and goals.
+    </p>
+
+    <a href="#projects" class="hero-button">View My Projects</a>
+</section>
 
 
         <section id="about">
@@ -151,137 +180,194 @@
 
         </section>
 
+        
+<section id="projects" class="content-section">
+    <h2>My Projects and Skills</h2>
+
+    <p>
+        This section highlights the skills I am developing through
+        coursework, independent practice and practical projects.
+    </p>
+
+    <input
+        type="search"
+        id="projectSearch"
+        placeholder="Search projects or skills..."
+        aria-label="Search projects or skills">
+
+    <button type="button" id="resetProjectSearch">
+        Reset Search
+    </button>
+
+    <p id="searchMessage" aria-live="polite"></p>
+
+    <div id="projectList">
+
+        <article class="project-card" data-search="html css web development">
+            <h3>Web Development</h3>
+            <p>
+                Learning HTML5, CSS and JavaScript to build
+                structured, responsive and interactive websites.
+            </p>
+        </article>
+
+        <article class="project-card" data-search="python programming data analysis">
+            <h3>Python Programming and Data Analysis</h3>
+            <p>
+                Developing Python programming skills and exploring
+                how data can be cleaned, analysed and interpreted.
+            </p>
+        </article>
+
+        <article class="project-card" data-search="java object oriented programming">
+            <h3>Java and Object-Oriented Programming</h3>
+            <p>
+                Practising classes, objects, encapsulation and
+                JavaFX interfaces through university programming tasks.
+            </p>
+        </article>
+
+    </div>
+</section>
+
 
         <section id="photos">
 
-            <h2>My Photos</h2>
+            <
+<h2>My Photos</h2>
 
-            <p>
-                Engage with <strong>Paul Sichone</strong>, a second-year
-                Computer Science student at Mulungushi University,
-                pursuing the frontiers of knowledge.
-            </p>
+<p>
+    These photos represent my journey as a Computer Science student
+    at Mulungushi University, learning programming and exploring
+    technology through practical experiences.
+</p>
 
+<div class="gallery-container">
 
-    
-            <img
-                src="images/Photo.jpg"
-                alt="A photo of Paul Sichone"
-                 max-height="100%"
-                 max-width="100%">
+    <figure class="gallery-item">
+        <img
+            src="images/Photo.jpg"
+            alt="Portrait of Paul Sichone, a Computer Science student"
+            class="gallery-image">
 
-            <h3>Coding and Building Solutions</h3>
+        <figcaption>
+            <strong>Meet Paul</strong>
+            <p>A Computer Science student pursuing knowledge and practical skills.</p>
+        </figcaption>
+    </figure>
 
-            <p>
-                A moment from my learning journey as I work on programming
-                projects and develop my data analytics skills.
-            </p>
+    <figure class="gallery-item">
+        <img
+            src="images/photo3.jpg"
+            alt="Paul Sichone working on a programming project"
+            class="gallery-image">
 
+        <figcaption>
+            <strong>Coding and Building Solutions</strong>
+            <p>Developing programming and data analysis skills through practice.</p>
+        </figcaption>
+    </figure>
 
-            <img
-                src="images/photo3.jpg"
-                alt="Paul Sichone working on a project"
-               max-height="100%"
-               max-width="100%">
+    <figure class="gallery-item">
+        <img
+            src="images/photo4.jpg"
+            alt="Paul Sichone learning and exploring technology"
+            class="gallery-image">
 
-            <h3>Learning Beyond the Classroom</h3>
+        <figcaption>
+            <strong>Learning Beyond the Classroom</strong>
+            <p>Exploring new ideas and building knowledge beyond lectures.</p>
+        </figcaption>
+    </figure>
 
-            <p>
-                Learning through practice, projects, and exploring new
-                technology ideas beyond the classroom.
-            </p>
+</div>
 
+<div class="gallery-controls">
+    <button type="button" id="previousPhoto">Previous Photo</button>
 
-        
-            <img
-                src="images/photo4.jpg"
-                alt="Paul Sichone learning beyond the classroom"
-                 max-height="100%"
-               max-width="100%">
+    <p id="galleryStatus" aria-live="polite">
+        Photo 1 of 3
+    </p>
 
-        </section>
-
-
-        <section id="media">
-
-            <h2>My Media</h2>
-            <p>
-            A brief introduction about me, my computer science journey,
-            and my passion for technology and programming.
-            </p>
-          <video
-          src="Videos/audio1.mp3" 
-          controls 
-
-           max-height="500%" 
-           max-width="500%">
-
-          </video>   
-         <p>
-            A brief  audio about about me, my computer science journey,
-            and my passion for technology and programming.
-         </p>
-        <audio
-        src="Videos/audio1.mp3" controls
-        
-        height="100"
-        width="100">
-            
-        </audio>  
-
+    <button type="button" id="nextPhoto">Next Photo</button>
+</div>
 
         </section>
+
+
+       
+<section id="media">
+    <h2>My Media</h2>
+
+    <h3>My Introduction Video</h3>
+    <p>
+        A short introduction to my Computer Science journey,
+        interests and passion for technology.
+    </p>
+
+    <video controls preload="metadata">
+        <source src="videos/video1.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+
+    <h3>About Me Audio</h3>
+    <p>
+        An audio introduction about my studies, learning journey
+        and technology interests.
+    </p>
+
+    <audio controls preload="metadata">
+        <source src="videos/audio1.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+</section>
 
         <section id="contact">
 
             <h2>Contact Me</h2>
+            
+<p>
+    <strong>Browser demonstration only — no message is sent.</strong>
+    This form validates your details and displays a local preview.
+</p>
 
-            <form action="#" method="post">
+<p id="formFeedback" role="status" aria-live="polite"></p>
+<div id="formPreview" hidden>
+    <h3>Message Preview</h3>
+    <p><strong>Name:</strong> <span id="previewName"></span></p>
+    <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+    <p><strong>Message:</strong> <span id="previewMessage"></span></p>
+    <p id="validationConfirmation"></p>
+</div>
 
-                <label for="name">Full Name:</label>
-                <br>
+           
+<form id="contactForm" action="#" method="post">
+    <label for="name">Full Name:</label>
+    <input
+        type="text"
+        id="name"
+        name="full_name"
+        required
+        placeholder="Enter your full name">
 
-                <input
-                    type="text"
-                    id="name"
-                    name="full_name"
-                    required
-                    placeholder="Enter your full name">
+    <label for="email">Email:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Enter your email address">
 
-                <br><br>
+    <label for="message">Message:</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        required
+        placeholder="Send a message"></textarea>
 
-
-                <label for="email">Email:</label>
-                <br>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="paul@gmail.com">
-
-                <br><br>
-
-
-              
-                <label for="message">Message:</label>
-                <br>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    cols="40"
-                    placeholder="Send a message"></textarea>
-
-                <br><br>
-
-
-                <button type="submit">Send Message</button>
-
-            </form>
-
+    <button type="submit">Preview Message</button>
+</form>
         </section>
 
     </main>
@@ -293,10 +379,18 @@
         <p>
             &copy; paulsichone000@gmial.com. All rights reserved.
         </p>
+        
+<p>
+    <a href="https://github.com/paulsichone90/My_First_Website">
+        View Source on GitHub
+    </a>
+</p>
 
     </footer>
+    
+    <script src="./js/app.js" defer></script>
 
 </body>
 
 </html>
-```
+

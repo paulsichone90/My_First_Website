@@ -1,0 +1,71 @@
+:root{
+        /* Typography */
+    --font-main: Arial, Helvetica, sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.7;
+
+    /* Layout */
+    --content-width: 1100px;
+    --radius-card: 12px;
+    --shadow-card: 0 4px 14px rgba(15, 23, 42, 0.08);
+
+    /* Spacing */
+    --space-small: 8px;
+    --space-medium: 16px;
+    --space-large: 30px;
+}
+
+
+.light{
+    /* Brand colours */
+    --color-primary: #2563EB;
+    --color-primary-hover: #1D4ED8;
+    --color-accent: #06B6D4;
+
+    /* Light theme */
+    --color-background: #F8FAFC;
+    --color-surface: #FFFFFF;
+    --color-text: #334155;
+    --color-heading: #0F172A;
+    --color-border: #CBD5E1;
+
+    /* Navigation */
+    --color-header: #0F172A;
+    --color-header-text: #FFFFFF;
+
+
+}
+
+/* ===== DARK THEME ===== */
+.dark {
+    /* Brand colours */
+    --color-primary: #60A5FA;
+    --color-primary-hover: #93C5FD;
+    --color-accent: #22D3EE;
+
+    /* Dark theme surfaces and text */
+    --color-background: #090f20;
+    --color-surface: #151F32;
+    --color-text: #CBD5E1;
+    --color-heading: #F1F5F9;
+    --color-border: #334155;
+
+    /* Header and navigation */
+    --color-header: #080D19;
+    --color-header-text: #F8FAFC;
+
+    /* Typography */
+    --font-main: Arial, Helvetica, sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.7;
+
+    /* Layout */
+    --content-width: 1100px;
+    --radius-card: 12px;
+    --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.25);
+
+    /* Spacing */
+    --space-small: 8px;
+    --space-medium: 16px;
+    --space-large: 30px;
+}
