@@ -1,9 +1,3 @@
-/* =========================================================
-   Personal Portfolio — consolidated stylesheet
-   Save as: css/styles.css
-   Theme classes expected on <body>: .light and .dark
-   ========================================================= */
-
 /* ---------- Theme variables shared by the page ---------- */
 :root {
     --font-main: Arial, Helvetica, sans-serif;
@@ -75,7 +69,7 @@ body {
 }
 
 img,
-video,
+Video,
 iframe {
     max-width: 100%;
 }
